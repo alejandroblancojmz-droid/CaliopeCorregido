@@ -1,2 +1,2 @@
 # Caliope
-Proyecto integrador full stack enfocado en crear una plataforma web para lectores y escritores. La aplicación busca integrar publicación de historias, lectura e interacción social en un solo ecosistema digital, priorizando una experiencia intuitiva, moderna y visualmente atractiva.
+Full-stack integrative project focused on building a web platform for readers and writers. The application aims to integrate story publishing, reading, and social interaction into a single digital ecosystem, prioritizing an intuitive, modern, and visually appealing user experience.
