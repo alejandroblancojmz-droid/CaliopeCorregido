@@ -51,7 +51,7 @@ Puede ajustarse si el equipo lo acuerda según carga de trabajo.
 ## Minutas
 - Cada reunión debe tener minuta
 - Incluye: acuerdos, tareas, avances
-- Rotación de responsable por reunión
+- Rotación de responsable por reunión (Scrum Master)
 
 ---
 
@@ -61,3 +61,14 @@ Puede ajustarse si el equipo lo acuerda según carga de trabajo.
 - Equipo de desarrollo
 
 Los roles pueden rotarse por sprint para aprendizaje.
+
+| Semana | Scrum Master | Product Owner | Dev 1 | Dev 2 | Dev 3 | Dev 4 | Dev 5 | Dev 6 |
+|--------|-------------|--------------|-------|-------|-------|-------|-------|-------|
+| 1 | Christopher | Rodolfo | Katia | Oscar | Cristina | América | Emmanuel | Alejandro |
+| 2 | Rodolfo | Katia | Oscar | Cristina | América | Emmanuel | Alejandro | Christopher |
+| 3 | Katia | Oscar | Cristina | América | Emmanuel | Alejandro | Christopher | Rodolfo |
+| 4 | Oscar | Cristina | América | Emmanuel | Alejandro | Christopher | Rodolfo | Katia |
+| 5 | Cristina | América | Emmanuel | Alejandro | Christopher | Rodolfo | Katia | Oscar |
+| 6 | América | Emmanuel | Alejandro | Christopher | Rodolfo | Katia | Oscar | Cristina |
+| 7 | Emmanuel | Alejandro | Christopher | Rodolfo | Katia | Oscar | Cristina | América |
+| 8 | Alejandro | Christopher | Rodolfo | Katia | Oscar | Cristina | América | Emmanuel |
