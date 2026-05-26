@@ -1,0 +1,186 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f3e7f3;
+  color: #24003f;
+}
+
+.about {
+  min-height: 100vh;
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.icono {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 25px;
+  background-color: white;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.18);
+}
+
+h1 {
+  font-size: 48px;
+  margin: 0;
+  font-family: Georgia, serif;
+}
+
+.subtitulo {
+  font-size: 22px;
+  margin-top: 15px;
+}
+
+.card {
+  background-color: white;
+  max-width: 1000px;
+  margin: 120px auto 0;
+  padding: 45px 50px;
+  border-radius: 16px;
+  text-align: left;
+}
+
+.card h2 {
+  text-align: center;
+  font-size: 32px;
+  font-family: Georgia, serif;
+}
+
+.card p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/**Diseño Responsivo*/
+@media (max-width: 768px) {
+  .about {
+    padding: 50px 20px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  .subtitulo {
+    font-size: 18px;
+  }
+
+  .card {
+    margin-top: 70px;
+    padding: 30px 25px;
+  }
+}
+
+
+/* Misión y Visión */
+
+.mision-vision {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin: 60px auto;
+    max-width: 1200px;
+    flex-wrap: wrap;
+}
+
+.info-card {
+    background: white;
+    flex: 1;
+    min-width: 350px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,.1);
+}
+
+.info-card h3 {
+    color: #1b144f;
+    font-size: 2rem;
+    font-family: Georgia, serif;
+}
+
+.info-card p {
+    color: #35315c;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Valores */
+
+.valores {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.valores h2 {
+    font-size: 3rem;
+    color: #1b144f;
+    margin-bottom: 50px;
+    font-family: Georgia, serif;
+}
+
+.valores-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.valor-card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,.1);
+}
+
+.valor-card h4 {
+    color: #1b144f;
+    font-size: 1.8rem;
+    margin: 20px 0 10px;
+    font-family: Georgia, serif;
+}
+
+.valor-card p {
+    color: #555;
+}
+
+/* Iconos */
+
+.icono {
+    width: 65px;
+    height: 65px;
+    background: #ead9ef;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #5d2a8b;
+}
+
+/* *Diseño responsivo */
+@media (max-width: 992px) {
+    .valores-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+
+    .valores-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .info-card {
+        min-width: 100%;
+    }
+
+    .valores h2 {
+        font-size: 2.2rem;
+    }
+}
