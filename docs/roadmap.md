@@ -1,38 +1,57 @@
 # Roadmap - Caliope
 
+## Sprint 0
+- Definición del proyecto
+- Definición del contrato social
+- Definición de alcance del proyecto
+
+---
+
 ## Sprint 1
 - Creación del repositorio
 - Organización en Jira
-- Definición del proyecto
 - Mockups iniciales
-- Diseño de base de datos
+- Prototipo en figma
 
 ---
 
 ## Sprint 2
-- Frontend base
-- Páginas principales
-- Login y registro
-- Backend inicial
-- Conexión con base de datos
+- Desarrollo de página “Sobre nosotros”
+- Desarrollo de página “Contáctanos”
+- Implementación de estilos globales (variables CSS)
+- Creación de componentes reutilizables (header, footer, cards, botones)
+- Implementación de diseño responsive (mobile y desktop)
+- Implementación de formulario de contacto (estructura y validaciones HTML básicas)
+- Reutilización de estilos entre páginas para consistencia visual
+- QA visual contra diseño (alineación, colores, tipografía)
+- Testing básico en navegador (sin errores en consola)
+- Preparación de estilos para modo oscuro
 
 ---
 
 ## Sprint 3
-- CRUD de historias
-- Sistema de comentarios
-- Integración frontend-backend
+- 
 
 ---
 
 ## Sprint 4
-- Pruebas generales
-- Corrección de errores
-- Optimización UI/UX
+- 
 
 ---
 
 ## Sprint 5
-- Preparación de deploy
-- Ajustes finales
-- Validación del sistema
+- 
+
+---
+
+## Sprint 6
+- 
+
+---
+
+## Sprint 7
+- 
+---
+
+## Sprint 8
+- 

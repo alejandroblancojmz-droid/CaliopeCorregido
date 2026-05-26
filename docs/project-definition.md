@@ -41,9 +41,3 @@ Convertirse en una plataforma literaria reconocida por integrar publicación, le
 
 ## Modelo de negocio
 Inicialmente gratuita para construir comunidad.
-
-A futuro:
-- Publicidad no invasiva
-- Funciones premium
-- Promoción de historias destacadas
-- Colaboraciones editoriales

@@ -15,14 +15,16 @@
 
 ---
 
-## Reuniones
-Lunes a jueves: 7:00 PM - 8:00 PM
+## Actualización de dinámica de trabajo
 
-Reuniones fuera de horario requieren votación previa.
-
-Posibles reuniones extra:
-- Viernes o sábado si es necesario
-- Para pendientes urgentes o entregas
+- Las reuniones pasan a ser **obligatorias de lunes a jueves**, realizándose después del bootcamp si no hubo tiempo durante la sesión.  
+- **Lunes:** asignación de tareas; el PO y SM deben llegar con el backlog preparado.  
+- **Martes y miércoles:** reuniones breves (15–30 minutos) para seguimiento, resolución de dudas y apoyo.  
+- **Jueves:** todo el trabajo debe quedar listo **a más tardar a las 7:00 pm** para revisión final.  
+- **Jueves por la tarde:** reunión interna entre SM y PO para revisar backlog y planear la siguiente semana.  
+- **Viernes:** solo se trabajará en caso de que el bootcamp lo permita.  
+- Se busca respetar **viernes por la tarde, sábado y domingo como días de descanso**.  
+- La organización del tiempo individual y la reunión de SM/PO fuera de lo establecido queda a consideración de cada integrante.
 
 ---
 
@@ -51,7 +53,7 @@ Puede ajustarse si el equipo lo acuerda según carga de trabajo.
 ## Minutas
 - Cada reunión debe tener minuta
 - Incluye: acuerdos, tareas, avances
-- Rotación de responsable por reunión (Scrum Master)
+- El PO en turno se hace responsable de la minuta
 
 ---
 
@@ -60,9 +62,9 @@ Puede ajustarse si el equipo lo acuerda según carga de trabajo.
 - Product Owner
 - Equipo de desarrollo
 
-Los roles pueden rotarse por sprint para aprendizaje.
+Los roles son rotativos por sprint para aprendizaje.
 
-| Semana | Scrum Master | Product Owner | Dev 1 | Dev 2 | Dev 3 | Dev 4 | Dev 5 | Dev 6 |
+| Sprint | Scrum Master | Product Owner | Dev 1 | Dev 2 | Dev 3 | Dev 4 | Dev 5 | Dev 6 |
 |--------|-------------|--------------|-------|-------|-------|-------|-------|-------|
 | 1 | Christopher | Rodolfo | Katia | Oscar | Cristina | América | Emmanuel | Alejandro |
 | 2 | Rodolfo | Katia | Oscar | Cristina | América | Emmanuel | Alejandro | Christopher |

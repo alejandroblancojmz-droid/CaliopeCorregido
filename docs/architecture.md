@@ -1,7 +1,7 @@
 # Architecture - Caliope
 
 ## Tecnologías
-- Frontend: HTML, CSS, JavaScript (o React + Bootstrap)
+- Frontend: HTML, CSS, JavaScript (Bootstrap)
 - Backend: Java + Spring Boot
 - Base de datos: MySQL
 - Control de versiones: Git + GitHub
