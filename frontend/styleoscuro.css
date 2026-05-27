@@ -1,210 +1,289 @@
 /* ==========================================
-   1. REINICIO GENERAL Y VARIABLES
+   1. FUENTES Y VARIABLES DEL SISTEMA
+   ========================================== */
+@import url('https://googleapis.com');
+
+:root {
+    /* Paleta de colores */
+    --bg-app: #130F26;
+    --bg-surface: #1D183A;
+    --bg-inputs: #252048;
+    --primary-purple: #7A52E1;
+    --bg-tags: #2D2354;
+    --text-tags: #BDB2FF;
+    --text-main: #F4F2FA;
+    --text-base: #C3BCDB;
+    --text-muted: #7E7599;
+    --borders: #2F2958;
+    
+    /* Fuentes */
+    --font-ui: 'Plus Jakarta Sans', sans-serif;
+    --font-editorial: 'Lora', Georgia, serif;
+    
+    /* Configuración */
+    --shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    --radius: 12px;
+    --transition: all 0.3s ease;
+}
+
+/* ==========================================
+   2. CONFIGURACIÓN GENERAL (RESET)
    ========================================== */
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #130F26; /* Fondo general */
-    color: #C3BCDB;            /* Texto cuerpo */
+    background-color: var(--bg-app);
+    color: var(--text-base);
+    font-family: var(--font-ui);
+    font-weight: 400;
     line-height: 1.6;
-    padding: 0;
-}
-
-main.aboutContent {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 40px 20px;
 }
 
 /* ==========================================
-   2. CABECERA (HEADER)
+   3. HEADER (ACERCA DE)
    ========================================== */
 .acercaDe {
     text-align: center;
-    padding: 60px 20px;
-    background-color: #1D183A; /* Superficie */
-    border-bottom: 1px solid #2F2958; /* Separadores */
+    padding: 6rem 1.5rem 4rem;
+    background: radial-gradient(circle at top, #2d2354 0%, var(--bg-app) 70%);
+    border-bottom: 1px solid var(--borders);
 }
 
 .header-icon-container {
-    font-size: 40px;
-    margin-bottom: 10px;
-    color: #7A52E1; /* Morado primario */
+    font-size: 3rem;
+    color: var(--primary-purple);
+    margin-bottom: 1.5rem;
 }
 
-.acercaDe .title {
-    color: #F4F2FA; /* Texto principal */
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+.title {
+    font-family: var(--font-editorial);
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: 0.75rem;
 }
 
-.acercaDe .subtitle {
-    color: #7E7599; /* Subtítulos */
+.subtitle {
     font-size: 1.2rem;
+    color: var(--text-muted);
+    font-weight: 500;
 }
 
 /* ==========================================
-   3. SECCIÓN: NUESTRA HISTORIA
+   4. CONTENIDO PRINCIPAL Y CUADRÍCULAS
    ========================================== */
-.story-section {
-    margin-bottom: 50px;
+.aboutContent {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem;
 }
 
+section {
+    margin-bottom: 6rem;
+}
+
+/* Nuestra Historia (Enfoque Editorial) */
 .cardHistoria {
-    background-color: #1D183A; /* Superficie */
-    padding: 30px;
-    border-radius: 10px;
-    border: 1px solid #2F2958;
+    background-color: var(--bg-surface);
+    padding: 3rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    border: 1px solid var(--borders);
+    border-left: 6px solid var(--primary-purple);
 }
 
 .nuestraHistoria {
-    color: #F4F2FA;
-    margin-bottom: 20px;
-    font-size: 1.8rem;
+    font-family: var(--font-editorial);
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: 1.5rem;
 }
 
 .historiaTexto p {
-    margin-bottom: 15px;
-    color: #C3BCDB;
+    font-family: var(--font-editorial);
+    font-size: 1.15rem;
+    color: var(--text-base);
+    margin-bottom: 1.25rem;
 }
 
 .historiaTexto p:last-child {
     margin-bottom: 0;
 }
 
-/* ==========================================
-   4. SECCIÓN: MISIÓN / VISIÓN & VALORES (GRIDS)
-   ========================================== */
-.goals-section, .seccionValores {
-    margin-bottom: 50px;
+/* Misión y Visión (Grid de 2 columnas) */
+.goals-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
 }
 
-.section-title {
-    color: #F4F2FA;
-    font-size: 1.8rem;
-    margin-bottom: 25px;
+/* Valores (Grid de 4 columnas) */
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 3rem;
 }
 
 .center-text {
     text-align: center;
 }
 
-/* Rejillas responsivas */
-.goals-grid, .values-grid {
-    display: grid;
-    gap: 20px;
+.section-title {
+    font-family: var(--font-editorial);
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: 1rem;
 }
 
-.goals-grid {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-}
-
-.values-grid {
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-}
-
-/* Tarjetas individuales de Misión, Visión y Valores */
+/* Estilo Base para Tarjetas (Objetivos y Valores) */
 .goal-card, .value-card {
-    background-color: #1D183A; /* Superficie */
-    padding: 25px;
-    border-radius: 10px;
-    border: 1px solid #2F2958;
-    transition: transform 0.2s ease, border-color 0.2s ease;
+    background-color: var(--bg-surface);
+    padding: 2.5rem 2rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    border: 1px solid var(--borders);
+    transition: var(--transition);
 }
 
 .goal-card:hover, .value-card:hover {
     transform: translateY(-5px);
-    border-color: #7A52E1; /* Resalta con morado al pasar el cursor */
+    border-color: var(--primary-purple);
 }
 
 .card-icon-container {
-    font-size: 24px;
-    color: #A29BFE; /* Lila claro */
-    margin-bottom: 15px;
+    font-size: 2rem;
+    color: var(--text-tags);
+    margin-bottom: 1.25rem;
 }
 
 .card-title {
-    color: #F4F2FA;
-    font-size: 1.4rem;
-    margin-bottom: 10px;
+    font-family: var(--font-ui);
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: 0.75rem;
 }
 
 .card-description {
-    color: #7E7599; /* Subtítulos / Texto secundario */
-    font-size: 0.95rem;
+    font-family: var(--font-ui);
+    color: var(--text-muted);
+    font-size: 1rem;
+}
+
+/* Modificación sutil para valores (estilo tipo tag) */
+.value-card .card-title {
+    color: var(--text-tags);
 }
 
 /* ==========================================
-   5. SECCIÓN: ÚNETE (CALL TO ACTION)
+   5. SECCIÓN LLAMADO A LA ACCIÓN (CTA)
    ========================================== */
 .cta-section {
-    margin-top: 60px;
-}
-
-.cta-card {
-    background-color: #1D183A;
-    padding: 40px 20px;
-    border-radius: 10px;
-    border: 1px solid #2F2958;
     text-align: center;
 }
 
+.cta-card {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--borders);
+    padding: 4rem 2rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Decoración de fondo para el CTA */
+.cta-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(122,82,225,0.15) 0%, transparent 50%);
+    pointer-events: none;
+}
+
 .cta-title {
-    color: #F4F2FA;
-    font-size: 2rem;
-    margin-bottom: 10px;
+    font-family: var(--font-editorial);
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: 0.75rem;
 }
 
 .cta-subtitle {
-    color: #C3BCDB;
-    margin-bottom: 25px;
+    font-size: 1.15rem;
+    color: var(--text-muted);
+    margin-bottom: 2.5rem;
 }
 
-/* Contenedor y botones */
 .cta-buttons-container {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 1.25rem;
     flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
 }
 
+/* ==========================================
+   6. BOTONES (ESPECIFICACIONES DEL SISTEMA)
+   ========================================== */
 .btn {
-    padding: 12px 25px;
+    font-family: var(--font-ui);
     font-size: 1rem;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
+    font-weight: 700; /* Peso Bold */
+    padding: 1rem 2.25rem;
+    border-radius: 10px; /* Entre 8px y 12px */
     border: none;
-    transition: background-color 0.2s ease, transform 0.1s ease;
+    cursor: pointer;
+    transition: var(--transition);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.btn:active {
-    transform: scale(0.98);
-}
-
-/* Botón Primario (Morado) */
+/* Botón Primario */
 .btn-primary {
-    background-color: #7A52E1;
-    color: #F4F2FA;
+    background-color: var(--primary-purple);
+    color: #FFFFFF;
 }
 
 .btn-primary:hover {
-    background-color: #633ec7;
+    background-color: #936bf5; /* Aclarado sutil para el hover */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(122, 82, 225, 0.4);
 }
 
-/* Botón Secundario (Tags fondo oscuro / Bordes lilas) */
+/* Botón Secundario */
 .btn-secondary {
-    background-color: #2D2354; /* Tags fondo */
-    color: #BDB2FF;            /* Lila claro */
-    border: 1px solid #7A52E1;
+    background-color: var(--bg-tags);
+    color: var(--primary-purple);
+    border: 1px solid var(--borders);
 }
 
 .btn-secondary:hover {
-    background-color: #3b2e6e;
-    color: #F4F2FA;
+    background-color: #382c66; /* Aclarado sutil para el hover */
+    color: #936bf5;
+    transform: translateY(-2px);
+}
+
+/* Animación sutil para el corazón */
+.heart-icon {
+    display: inline-block;
+    animation: heartbeat 2.5s infinite;
+}
+
+@keyframes heartbeat {
+    0% { transform: scale(1); }
+    20% { transform: scale(1.1); }
+    40% { transform: scale(1); }
 }
