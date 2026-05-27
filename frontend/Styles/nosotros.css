@@ -1,186 +1,291 @@
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f3e7f3;
-  color: #24003f;
+    margin: 0;
+    background-color: #f3e7f3;
+    color: #1b144f;
+    font-family: Arial, sans-serif;
 }
 
-.about {
-  min-height: 100vh;
-  padding: 80px 40px;
-  text-align: center;
+/* Acerca de y Nuestra historia */
+.acercaDe {
+    text-align: center;
+    padding: 80px 20px 100px;
 }
 
-.icono {
-  width: 80px;
-  height: 80px;
-  margin: 0 auto 25px;
-  background-color: white;
-  border-radius: 18px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 35px;
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.18);
+.header-icon-container {
+    width: 80px;
+    height: 80px;
+    background: white;
+    margin: 0 auto 25px;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.18);
 }
 
-h1 {
-  font-size: 48px;
-  margin: 0;
-  font-family: Georgia, serif;
+.icon-book::before {
+    content: "📖";
+    font-size: 34px;
 }
 
-.subtitulo {
-  font-size: 22px;
-  margin-top: 15px;
+.title {
+    font-family: Georgia, serif;
+    font-size: 48px;
+    margin: 0;
+    color: #3b0f4f;
 }
 
-.card {
-  background-color: white;
-  max-width: 1000px;
-  margin: 120px auto 0;
-  padding: 45px 50px;
-  border-radius: 16px;
-  text-align: left;
+.subtitle {
+    font-size: 22px;
+    margin-top: 15px;
+    color: #2b174f;
 }
 
-.card h2 {
-  text-align: center;
-  font-size: 32px;
-  font-family: Georgia, serif;
+.aboutContent {
+    padding: 0 45px 80px;
 }
 
-.card p {
-  font-size: 18px;
-  line-height: 1.6;
+.cardHistoria {
+    background: white;
+    max-width: 1000px;
+    margin: 0 auto 60px auto;
+    padding: 45px 50px;
+    border-radius: 16px;
 }
 
+.nuestraHistoria {
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 32px;
+    color: #08002e;
+}
+
+.historiaTexto p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #1b144f;
+    text-align: center;
+}
+/* Acerca de y Nuestra historia */
 /**Diseño Responsivo*/
 @media (max-width: 768px) {
-  .about {
-    padding: 50px 20px;
-  }
+    .acercaDe {
+        padding: 50px 20px 70px;
+    }
 
-  h1 {
-    font-size: 36px;
-  }
+    .title {
+        font-size: 36px;
+    }
 
-  .subtitulo {
-    font-size: 18px;
-  }
+    .subtitle {
+        font-size: 18px;
+    }
 
-  .card {
-    margin-top: 70px;
-    padding: 30px 25px;
-  }
+    .aboutContent {
+        padding: 0 20px 60px;
+    }
+
+    .cardHistoria {
+        padding: 30px 25px;
+    }
+
+    .nuestraHistoria {
+        font-size: 28px;
+    }
+
+    .historiaTexto p {
+        font-size: 16px;
+    }
 }
+
 
 
 /* Misión y Visión */
 
-.mision-vision {
-    display: flex;
+.goals-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
-    justify-content: center;
-    margin: 60px auto;
     max-width: 1200px;
-    flex-wrap: wrap;
+    margin: 0 auto;
 }
 
-.info-card {
+.goal-card {
     background: white;
-    flex: 1;
-    min-width: 350px;
-    padding: 30px;
+    padding: 35px;
     border-radius: 20px;
     box-shadow: 0 4px 10px rgba(0,0,0,.1);
 }
 
-.info-card h3 {
-    color: #1b144f;
-    font-size: 2rem;
-    font-family: Georgia, serif;
+/*Valores */
+
+.seccionValores {
+    padding: 60px 20px;
 }
 
-.info-card p {
-    color: #35315c;
-    font-size: 1.1rem;
-    line-height: 1.6;
-}
-
-/* Valores */
-
-.valores {
+.section-title {
     text-align: center;
-    padding: 40px 20px;
-}
-
-.valores h2 {
     font-size: 3rem;
     color: #1b144f;
     margin-bottom: 50px;
     font-family: Georgia, serif;
 }
 
-.valores-grid {
+.values-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 25px;
     max-width: 1200px;
-    margin: auto;
+    margin: 0 auto;
 }
 
-.valor-card {
+.value-card {
     background: white;
     padding: 30px 20px;
     border-radius: 20px;
     box-shadow: 0 4px 10px rgba(0,0,0,.1);
-}
-
-.valor-card h4 {
-    color: #1b144f;
-    font-size: 1.8rem;
-    margin: 20px 0 10px;
-    font-family: Georgia, serif;
-}
-
-.valor-card p {
-    color: #555;
+    text-align: center;
 }
 
 /* Iconos */
-
-.icono {
+.card-icon-container {
     width: 65px;
     height: 65px;
-    background: #ead9ef;
     border-radius: 50%;
+    background: #ead9ef;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     margin-bottom: 20px;
-    font-size: 30px;
-    color: #5d2a8b;
 }
 
-/* *Diseño responsivo */
+.value-card .card-icon-container {
+    margin: 0 auto 20px;
+}
+
+.goal-card .card-icon-container {
+    margin-bottom: 20px;
+}
+
+.card-title {
+    color: #13004f;
+    font-size: 2rem;
+    font-family: Georgia, serif;
+    margin-bottom: 15px;
+}
+
+.card-description {
+    color: #2e2e5e;
+    line-height: 1.6;
+}
+
+/**Responsive */
+
 @media (max-width: 992px) {
-    .valores-grid {
+
+    .values-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .goals-grid {
+        grid-template-columns: 1fr;
     }
 }
 
 @media (max-width: 576px) {
 
-    .valores-grid {
+    .values-grid {
         grid-template-columns: 1fr;
     }
 
-    .info-card {
-        min-width: 100%;
+    .section-title {
+        font-size: 2.2rem;
     }
 
-    .valores h2 {
-        font-size: 2.2rem;
+    .card-title {
+        font-size: 1.6rem;
+    }
+}
+
+/*Unete a Caliope */
+.cta-section {
+    padding: 60px 40px 80px;
+}
+
+.cta-card {
+    background: white;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 30px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,.1);
+}
+
+.cta-title {
+    font-family: Georgia, serif;
+    font-size: 34px;
+    color: #08002e;
+    margin-bottom: 15px;
+}
+
+.cta-subtitle {
+    font-size: 18px;
+    color: #1b144f;
+    margin-bottom: 30px;
+}
+
+.cta-buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 14px 32px;
+    border-radius: 14px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: #431457;
+    color: white;
+    border: 2px solid #431457;
+}
+
+.btn-secondary {
+    background: white;
+    color: #431457;
+    border: 2px solid #431457;
+}
+
+/**Responsive */
+
+@media (max-width: 576px) {
+    .cta-section {
+        padding: 40px 20px 60px;
+    }
+
+    .cta-card {
+        padding: 35px 20px;
+    }
+
+    .cta-title {
+        font-size: 28px;
+    }
+
+    .cta-subtitle {
+        font-size: 16px;
+    }
+
+    .cta-buttons-container {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
     }
 }
