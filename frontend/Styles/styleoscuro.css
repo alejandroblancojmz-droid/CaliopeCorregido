@@ -1,7 +1,3 @@
-/* ==========================================
-   1. FUENTES Y VARIABLES DEL SISTEMA
-   ========================================== */
-@import url('https://googleapis.com');
 
 :root {
     /* Paleta de colores */
@@ -27,7 +23,7 @@
 }
 
 /* ==========================================
-   2. CONFIGURACIÓN GENERAL (RESET)
+   2. CONFIGURACIÓN GENERAL
    ========================================== */
 * {
     box-sizing: border-box;
@@ -43,9 +39,9 @@ body {
     line-height: 1.6;
 }
 
-/* ==========================================
+/* 
    3. HEADER (ACERCA DE)
-   ========================================== */
+    */
 .acercaDe {
     text-align: center;
     padding: 6rem 1.5rem 4rem;
@@ -72,10 +68,30 @@ body {
     color: var(--text-muted);
     font-weight: 500;
 }
+/* Contenedor del logotipo */
+.header-logo-container {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-/* ==========================================
+/* Control exacto del tamaño y comportamiento del logo */
+.main-logo {
+    max-width: 70px; /* Ajusta el ancho para tu logo */
+    height: auto;     /* Mantiene la proporción original sin deformar */
+    display: block;
+    transition: var(--transition);
+}
+/* Efecto visual sutil cuando el usuario pasa el mouse */
+.main-logo:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 12px rgba(122, 82, 225, 0.5)); /* Brillo morado  */
+}
+
+/* 
    4. CONTENIDO PRINCIPAL Y CUADRÍCULAS
-   ========================================== */
+    */
 .aboutContent {
     max-width: 1100px;
     margin: 0 auto;
@@ -86,7 +102,7 @@ section {
     margin-bottom: 6rem;
 }
 
-/* Nuestra Historia (Enfoque Editorial) */
+/* Nuestra Historia */
 .cardHistoria {
     background-color: var(--bg-surface);
     padding: 3rem;
@@ -115,14 +131,14 @@ section {
     margin-bottom: 0;
 }
 
-/* Misión y Visión (Grid de 2 columnas) */
+/* Misión y Visión 2 columnas */
 .goals-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
 }
 
-/* Valores (Grid de 4 columnas) */
+/* Valores 4 columnas */
 .values-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -177,14 +193,14 @@ section {
     font-size: 1rem;
 }
 
-/* Modificación sutil para valores (estilo tipo tag) */
+/* Modificación sutil para valores */
 .value-card .card-title {
     color: var(--text-tags);
 }
 
-/* ==========================================
-   5. SECCIÓN LLAMADO A LA ACCIÓN (CTA)
-   ========================================== */
+/* 
+   5. SECCIÓN LLAMADO A LA ACCIÓN 
+    */
 .cta-section {
     text-align: center;
 }
@@ -199,7 +215,7 @@ section {
     overflow: hidden;
 }
 
-/* Decoración de fondo para el CTA */
+/* Decoración de fondo */
 .cta-card::before {
     content: '';
     position: absolute;
@@ -234,15 +250,15 @@ section {
     z-index: 1;
 }
 
-/* ==========================================
+/*
    6. BOTONES (ESPECIFICACIONES DEL SISTEMA)
-   ========================================== */
+   */
 .btn {
     font-family: var(--font-ui);
     font-size: 1rem;
-    font-weight: 700; /* Peso Bold */
+    font-weight: 700; 
     padding: 1rem 2.25rem;
-    border-radius: 10px; /* Entre 8px y 12px */
+    border-radius: 10px; 
     border: none;
     cursor: pointer;
     transition: var(--transition);
@@ -258,7 +274,7 @@ section {
 }
 
 .btn-primary:hover {
-    background-color: #936bf5; /* Aclarado sutil para el hover */
+    background-color: #936bf5; 
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(122, 82, 225, 0.4);
 }
@@ -271,7 +287,7 @@ section {
 }
 
 .btn-secondary:hover {
-    background-color: #382c66; /* Aclarado sutil para el hover */
+    background-color: #382c66; 
     color: #936bf5;
     transform: translateY(-2px);
 }
@@ -280,6 +296,26 @@ section {
 .heart-icon {
     display: inline-block;
     animation: heartbeat 2.5s infinite;
+}
+
+.header-logo2-container {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Control tamaño y comportamiento del logo de abajo !NOSOTROS! */
+.main-logo2 {
+    max-width: 150px; /* ancho logo */
+    height: auto;   
+    display: block;
+    transition: var(--transition);
+}
+/* Efecto pasa el mouse */
+.main-logo2:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 16px rgba(122, 82, 225, 0.5)); /* Brillo a UI */
 }
 
 @keyframes heartbeat {
